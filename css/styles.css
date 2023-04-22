@@ -108,6 +108,10 @@ img {
   color: var(--main-text-color);
 }
 
+.team-content .text {
+  margin-bottom: 8px;
+}
+
 /*
   |============================
   |----------HEADER------------
@@ -254,6 +258,22 @@ img {
 .hero-btn:focus {
   background: var(--hover-color);
 }
+
+.hero-background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleofficeone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 1440px;
+  min-height: 600px;
+  margin: auto auto;
+}
 /*
   |============================
   |---------ADVANTAGES---------
@@ -265,7 +285,7 @@ img {
 
 .advantage-list {
   display: flex;
-  flex-wrap: center;
+  /*flex-wrap: center;*/
 }
 
 .advantage-list li:not(:last-child) {
@@ -559,4 +579,52 @@ img {
 
 .white-backgound {
   background-color: var(--white-color);
+}
+
+/*-------NEW-------*/
+
+.advantage-item::before {
+  display: block;
+  content: '';
+  background: var(--light-color);
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.advantage-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.advantage-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.advantage-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.test {
+  display: flex;
+}
+
+.isnta {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+
+  background-image: url(../images/team-instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.test li:not(:last-child) {
+  margin-right: 36px;
 }

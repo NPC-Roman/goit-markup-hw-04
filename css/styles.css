@@ -427,6 +427,8 @@ img {
 .footer-section {
   padding: 100px 0;
   background-color: var(--dark-text-color);
+
+  display: flex;
 }
 
 .footer-logo {
@@ -611,20 +613,66 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 
-.test {
+.sociallink-list {
+  display: flex;
+  list-style: none;
+
+  padding: 0;
+  margin: auto;
+
+  /*outline: 3px dashed darkmagenta;*/
+}
+
+.sociallink-btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 50%;
+  background: var(--web-herobtn-color);
+}
+
+.sociallink-btn:hover,
+.sociallink-btn:focus {
+  background: var(--hover-color);
+}
+.customers-section {
+  padding: 120px 0;
+}
+
+.customers-list {
   display: flex;
 }
 
-.isnta {
-  height: 40px;
-  width: 40px;
-  background-color: red;
-
-  background-image: url(../images/team-instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.customers-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
-.test li:not(:last-child) {
-  margin-right: 36px;
+.customers-item:hover {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.customers-svg {
+  fill: #8e8f99;
+}
+
+.customers-svg:hover {
+  fill: var(--hover-color);
+}
+
+.customers-list li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.social-test {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.foot-test {
+  display: flex;
 }

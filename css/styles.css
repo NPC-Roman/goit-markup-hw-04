@@ -590,8 +590,8 @@ footer .socials-link:active {
   width: 40px; 
   
 
-  /*background: var(--primary-color);*/
-  border-radius: 50%;  
+  /*background: var(--primary-color);
+  border-radius: 50%;*/
 }
 
 .socials-link {

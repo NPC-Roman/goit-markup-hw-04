@@ -215,7 +215,7 @@ img {
 }
 /*
   |============================
-  |----------HERO-BTN----------
+  |------------HERO------------
   |============================
 */
 .hero-section {
@@ -588,9 +588,10 @@ footer .socials-link:active {
 .socials-icon {
   height: 40px;
   width: 40px; 
-  border-radius: 50%;  
+  
 
-  background: var(--primary-color);
+  /*background: var(--primary-color);*/
+  border-radius: 50%;  
 }
 
 .socials-link {
@@ -615,7 +616,11 @@ footer .socials-link:active {
 .socials-svg {
   fill: var(--light-color);
 }
-
+/*
+  |============================
+  |----------------------------
+  |============================
+*/
 
 
 
